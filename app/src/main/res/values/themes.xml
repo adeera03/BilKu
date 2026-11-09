@@ -1,0 +1,23 @@
+<resources>
+    <style name="Base.Theme.BilKu" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_dark</item>
+        <item name="colorPrimaryVariant">@color/purple_card</item>
+        <item name="colorOnPrimary">@color/pastel_yellow</item>
+        <item name="colorSecondary">@color/pastel_yellow</item>
+        <item name="android:statusBarColor">@color/purple_dark</item>
+        <item name="android:navigationBarColor">@color/purple_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/purple_dark</item>
+        <item name="android:textColorPrimary">@color/soft_white</item>
+        <item name="alertDialogTheme">@style/BilKuAlertDialog</item>
+    </style>
+
+    <style name="Theme.BilKu" parent="Base.Theme.BilKu" />
+
+    <style name="BilKuAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/purple_card</item>
+        <item name="android:textColorPrimary">@color/soft_white</item>
+        <item name="colorAccent">@color/pastel_yellow</item>
+    </style>
+
+</resources>

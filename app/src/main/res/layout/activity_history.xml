@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_dark"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="BILKU  /  ARCHIVE"
+        android:textColor="@color/pastel_yellow"
+        android:textSize="12sp"
+        android:letterSpacing="0.18"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Bill History"
+        android:textColor="@color/soft_white"
+        android:textSize="34sp"
+        android:fontFamily="serif"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Your collection of monthly electricity statements."
+        android:textColor="@color/muted_text"
+        android:textSize="14sp"
+        android:fontFamily="@font/nunito"
+        android:layout_marginBottom="18dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_soft"
+        android:layout_marginBottom="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MONTHLY STATEMENTS"
+            android:textColor="@color/pastel_yellow"
+            android:textSize="11sp"
+            android:letterSpacing="0.12"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LATEST FIRST"
+            android:textColor="@color/muted_text"
+            android:textSize="10sp"
+            android:letterSpacing="0.08"
+            android:fontFamily="sans-serif"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/pastel_yellow"
+        android:text="Back to Calculator"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_dark"
+        android:textSize="15sp"
+        android:fontFamily="@font/nunito_bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="BILKU  ·  EST. 2026"
+        android:textColor="@color/muted_text"
+        android:textSize="10sp"
+        android:letterSpacing="0.12"
+        android:fontFamily="sans-serif"/>
+
+</LinearLayout>

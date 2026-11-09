@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="BILKU  /  STATEMENT"
+            android:textColor="@color/pastel_yellow"
+            android:textSize="12sp"
+            android:letterSpacing="0.18"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bill Details"
+            android:textColor="@color/soft_white"
+            android:textSize="34sp"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="A closer look at your electricity charges."
+            android:textColor="@color/muted_text"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="22dp"
+            android:background="@color/line_soft"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BILKU"
+                android:textColor="#756654"
+                android:textSize="11sp"
+                android:letterSpacing="0.20"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Electricity Statement"
+                android:textColor="#352F28"
+                android:textSize="26sp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="MONTHLY BILL RECORD"
+                android:textColor="#756654"
+                android:textSize="10sp"
+                android:letterSpacing="0.13"
+                android:fontFamily="sans-serif-medium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="20dp"
+                android:background="#C9B9A3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BILLING MONTH"
+                android:textColor="#756654"
+                android:textSize="11sp"
+                android:letterSpacing="0.10"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/textViewMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="20dp"
+                android:text="January"
+                android:textColor="#352F28"
+                android:textSize="25sp"
+                android:fontFamily="serif"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="18dp"
+                android:background="#C9B9A3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Electricity Usage"
+                    android:textColor="#625447"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"/>
+
+                <TextView
+                    android:id="@+id/textViewUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 kWh"
+                    android:textColor="#352F28"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Charges"
+                    android:textColor="#625447"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"/>
+
+                <TextView
+                    android:id="@+id/textViewTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 0.00"
+                    android:textColor="#352F28"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rebate Applied"
+                    android:textColor="#625447"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"/>
+
+                <TextView
+                    android:id="@+id/textViewRebate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="#352F28"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="20dp"
+                android:background="#C9B9A3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FINAL AMOUNT PAYABLE"
+                android:textColor="#625447"
+                android:textSize="11sp"
+                android:letterSpacing="0.12"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="RM 0.00"
+                android:textColor="#352F28"
+                android:textSize="36sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="BILKU  ·  EST. 2026"
+                android:textColor="#887968"
+                android:textSize="10sp"
+                android:letterSpacing="0.12"
+                android:fontFamily="sans-serif"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/pastel_yellow"
+            android:text="Edit Statement"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_dark"
+            android:textSize="15sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/purple_card"
+            android:text="Delete Statement"
+            android:textAllCaps="false"
+            android:textColor="#F0C2B5"
+            android:textSize="15sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/purple_card"
+            android:text="Back to History"
+            android:textAllCaps="false"
+            android:textColor="@color/soft_white"
+            android:textSize="15sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+    </LinearLayout>
+</ScrollView>
