@@ -15,7 +15,8 @@ public class AboutActivity extends AppCompatActivity {
     TextView textViewWebsite;
     Button buttonBack;
 
-    String websiteUrl = "";
+
+    String websiteUrl = "https://github.com/adeera03/BilKu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
